@@ -49,3 +49,9 @@ span {
     font-size: 20px;
     font-weight: 600;
 }
+
+.grid-item a {
+    color: #1085e4;
+    font-size: 14px;
+    font-weight: 600;
+}
