@@ -13,7 +13,11 @@ h1 {
     font-size: 80px;
     font-weight: 600px;
     color: #192b59;
+}
 
+p {
+    font-size: 16px;
+    color: #7581a1;
 }
 
 .nav {
@@ -53,5 +57,24 @@ span {
 .grid-item a {
     color: #1085e4;
     font-size: 14px;
+    font-weight: 600;
+}
+
+.page-subscribe h2 {
+    font-size: 50px;
+    color: #ffffff;
+    background-color: #1085e4;
+}
+
+.page-subscribe p {
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #1085e4;
+}
+
+
+.page-software h2 {
+    font-size: 50px;
+    color: #192b59;
     font-weight: 600;
 }
