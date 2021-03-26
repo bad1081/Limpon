@@ -38,6 +38,25 @@ h1 {
     margin-bottom: 14px;
 }
 
+.title-40 {
+    font-size: 40px;
+    letter-spacing: -1.1px;
+    color:#192b59;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.title-40 span { 
+    display: block;
+    color: #1085e4;  
+    font-weight: 800; 
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 3.5px;
+} 
+
 .page-stat .title-h2,  .page-screen .title-h2 {
     text-align: center;
     margin: 0 auto;
@@ -47,24 +66,15 @@ h1 {
     max-width: 500px;
 }
 
- .page-screen .title-h2 {
-    font-size: 40px;
-    letter-spacing: -1.1px;
-
-}
-
 .page-screen .title-h2 span {
-    font-size: 18px;
-    margin-bottom: 20px;
-    letter-spacing: 3.5px;
+   
 }
 
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
 }
-
-
+ 
 .nav {
     font-size: 12px;
     color: #6e7ea9;
@@ -98,7 +108,7 @@ h1 {
 
 .btn-primery:hover {
     color: #1085e4;
-    background-color: #fff; 
+    background-color: transparent; 
 }
 
 .btn-secondery { 
@@ -202,7 +212,81 @@ h1 {
 }
 
 .analysis {
-    margin-top: 70px;
+    margin-top: 36px;
+    margin-bottom: -7px;
+}
+
+.box-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-price-item h3 {
+    color: #000958;
+    font-size: 70px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.box-price-item h3 span {
+    font-size: 20px;
+}
+
+.box-price-item p {
+    font-size: 14px;
+    color: #0084ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.box-price-item:first-child h3 {
+    margin-bottom: 35px;
+} 
+
+.box-price-item h3 span:first-child {
+    color: #000958;
+} 
+
+.box-price-item h3 span:last-child {
+    color: #7b8ab2;
+} 
+
+.box-price-item {
+background-color: #f5faff;
+flex-basis: 32%;
+position: relative;
+padding: 90px 0 96 0;
+}
+
+.box-price-item ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 34px;
+    margin-bottom: 59px;
+    font-size: 14px;
+}
+
+.box-price-item ul>li {
+    margin-bottom: 14px;
+}
+
+.box-price-item::after {
+    content: "";
+    width: 58px;
+    height: 100%;
+    background-image: url();
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.box-price-item.active::after {
+    display: none;
+}
+
+.box-price-item.active {
+    background-color: #192b59;
+    color: #fff;
 }
 
 /* page */
@@ -215,7 +299,10 @@ h1 {
     padding: 116px 0 96px 0;
 }
 
+.page-plan, .page-screen {
+    text-align: center;
+}
+
 .page-screen {
     padding: 116px 0 0 0;
-    text-align: center;
 }
