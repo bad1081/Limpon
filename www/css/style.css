@@ -327,6 +327,12 @@ h1 {
     padding: 53px 0 330px 0;
 }
 
+.page-company {
+    background-image: url(../img/);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .page-stat, .page-screen {
     background-color: #edf6ff;
 }
