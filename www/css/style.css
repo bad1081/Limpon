@@ -161,6 +161,28 @@ h1 {
     margin-left: 15px;
 }
 
+.list-company {
+    list-style-type: none;
+}
+
+.list-company-item {
+
+}
+
+.company-one {
+    background-image: url(../img/sp1.png);
+}
+.company-two {
+    background-image: url(../img/sp2.png);
+}
+.company-three {
+    background-image: url(../img/sp3.png);
+}
+.company-four {
+    background-image: url(../img/sp4.png);
+}
+
+
 .grid h2 {
     color: #192b59;
     font-weight: 700;
@@ -328,7 +350,7 @@ h1 {
 }
 
 .page-company {
-    background-image: url(../img/);
+    background-image: url(../img/sponsor-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
