@@ -106,6 +106,17 @@ h1 {
     letter-spacing: 2px;
 }
 
+.screen-img {
+    display: block;
+    background-image: url(../img/header-screen.png);
+    background-repeat: no-repeat;
+    width: 895px;
+    height: 740px;
+    position: absolute;
+    right: 0;
+    top: 188px;
+}
+
 .btn-primery {
     background-color: #1085e4;
     color: #fff;
@@ -163,25 +174,42 @@ h1 {
 
 .list-company {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 
 .list-company-item {
-
+    display: block;
 }
 
 .company-one {
     background-image: url(../img/sp1.png);
-}
-.company-two {
-    background-image: url(../img/sp2.png);
-}
-.company-three {
-    background-image: url(../img/sp3.png);
-}
-.company-four {
-    background-image: url(../img/sp4.png);
+    flex-basis: 198px;
+    height: 58px;
 }
 
+.company-two {
+    background-image: url(../img/sp2.png);
+    flex-basis: 200px;
+    height: 69px;
+}
+
+.company-three {
+    background-image: url(../img/sp3.png);
+    flex-basis: 201px;
+    height:47px;
+}
+
+.company-four {
+    background-image: url(../img/sp4.png);
+    flex-basis: 200px;
+    height: 69px;
+}
 
 .grid h2 {
     color: #192b59;
@@ -204,13 +232,11 @@ h1 {
 .page-subscribe h2 {
     font-size: 50px;
     color: #ffffff;
-    background-color: #1085e4;
 }
 
 .page-subscribe p {
     color: #ffffff;
     font-size: 18px;
-    background-color: #1085e4;
 }
 
 
@@ -347,12 +373,15 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 53px 0 330px 0;
+    position: relative;
 }
 
 .page-company {
     background-image: url(../img/sponsor-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 107px 0 95px;
+
 }
 
 .page-stat, .page-screen {
@@ -369,4 +398,15 @@ h1 {
 
 .page-screen {
     padding: 116px 0 0 0;
+}
+
+.page-subscribe {
+    background: rgba(10,32,144,1);
+    background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
 }
