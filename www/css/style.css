@@ -57,6 +57,8 @@ h1 {
     letter-spacing: 3.5px;
 } 
 
+
+
 .page-stat .title-h2,  .page-screen .title-h2 {
     text-align: center;
     margin: 0 auto;
@@ -229,6 +231,7 @@ h1 {
     font-weight: 600;
 }
 
+
 .page-subscribe h2 {
     font-size: 50px;
     color: #ffffff;
@@ -238,7 +241,6 @@ h1 {
     color: #ffffff;
     font-size: 18px;
 }
-
 
 .page-software h2 {
     font-size: 50px;
@@ -365,6 +367,17 @@ h1 {
     color: #fff;
 }
 
+.box-subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-subscribe-text {
+    font-size: 18px;
+    max-width: 437px;
+}
+
 
 /* page */
 
@@ -401,6 +414,8 @@ h1 {
 }
 
 .page-subscribe {
+    padding: 25px 0 28px 0;
+    color: #fff;
     background: rgba(10,32,144,1);
     background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
