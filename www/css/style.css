@@ -68,7 +68,11 @@ h1 {
     max-width: 500px;
 }
 
-
+.page-subscribe .title-h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
@@ -231,6 +235,16 @@ h1 {
     font-weight: 600;
 }
 
+.grid-icon {
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.grid-icon-1 {
+    background-image: url(../img/icon1.png);
+    width: 79px;
+    height: 82px;
+}
 
 .page-subscribe h2 {
     font-size: 50px;
@@ -377,6 +391,42 @@ h1 {
     font-size: 18px;
     max-width: 437px;
 }
+
+.box-subscribe-user {
+    position: relative;
+}
+
+.box-subscribe-child {
+    flex-basis: 49%;
+} 
+
+.box-subscribe-user input {
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #3f5cb1;
+    border-radius: 45px;
+    background-color: transparent;
+    padding: 20px 230px 25px 37px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.box-subscribe-user .btn-primery {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    padding: 17px 50px;
+}
+
+.box-subscribe-user input:focus, .box-subscribe-user .btn-primery {
+    outline: none;
+}
+
+.box-subscribe-user input::-webkit-input-placeholder {color:#b1e3ee;}
+.box-subscribe-user input::-moz-placeholder          {color:#b1e3ee;}
+.box-subscribe-user input:-moz-placeholder           {color:#b1e3ee;}
+.box-subscribe-user input:-ms-input-placeholder      {color:#b1e3ee;}
 
 
 /* page */
