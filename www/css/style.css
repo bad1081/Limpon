@@ -77,7 +77,9 @@ h1 {
     max-width: 1110px;
     margin: 0 auto;
 }
-
+.content-app .title-h2 {
+    margin-bottom: 33px;
+}
 .box-header {
     display: flex;
     justify-content: space-between;
@@ -354,7 +356,7 @@ h1 {
 }
 
 .page-software {
-    padding: 199px 0px 156px 0;
+    padding: 199px 0 156px 0;
     position: relative;
     overflow: hidden;
 }
@@ -399,26 +401,73 @@ h1 {
 .page-software-list dt {
     font-weight: 700;
     color: #5a6789;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .page-software-list dd {
     margin-left: 0;
     margin-bottom: 50px; 
     font-size: 14px;
-    line-height: 1.8;
+    line-height: 1.75;
+    padding-right: 20px; 
+}
+
+.page-app-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c4d2dd;
+    margin-top: 28px;
+    letter-spacing: 3.5px;
+    margin-bottom: 20px;
+}
+
+.page-app-list {
+    padding: 0;
+    list-style-type: none;
+    margin-left: -16px;
+}
+
+.page-app-list>li {
+    display: inline-block;
+}
+
+.page-app-list>li>a {
+    background-image: url(../img/app.png);
+    width: 202px;
+    height:81px;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.page-app-list>li>.page-app-android {
+    background-position: 0 0;
+}
+
+.page-app-list>li>.page-app-ios {
+    background-position: -204px 0;
+}
+
+.video-app {
+    position: absolute;
+    top: -60px;
+    right: -171px;
+}
+
+.content-app {
+    width: 55%;
 }
 
 .page-software-img {
     display: block;
     background-image: url(../img/features-bg.png);
-    height: 934px;
-    width: 934px;
+    height: 837px;
+    width: 926px;
     background-size: 100% 100%;
     background-position: 0 0;
     position: absolute;
     left: -25px;
-    bottom: -90px;
+    bottom: -30px;
 }
 
 .page-subscribe h2 {
@@ -649,4 +698,16 @@ h1 {
     background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+}
+
+.page-app {
+    padding: 71px 0 75px 0;
+}
+
+.page-app .wrap {
+    position: relative;
+}
+
+.page-analytics {
+    background-image: url(../img/anytype-bg.png);
 }
