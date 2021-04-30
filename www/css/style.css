@@ -361,7 +361,7 @@ h1 {
     overflow: hidden;
 }
 
-.page-software-icon {
+.settings-icon {
     display: block;
     background-image: url(../img/feature-icon.png);
     background-repeat: no-repeat;
@@ -379,7 +379,7 @@ h1 {
     flex-basis: 55%;
 }
 
-.page-software .title-h2 {
+.page-software .title-h2 .page-analytics .title-h2 {
     max-width: 766px;
     margin-top: 12px;
     margin-bottom: 26px;
@@ -452,6 +452,20 @@ h1 {
     position: absolute;
     top: -60px;
     right: -171px;
+}
+
+.flex-analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-analytics>div {
+    flex-basis: 53%;
+}
+
+.page-analytics-text {
+    margin-bottom: 54px;
 }
 
 .content-app {
@@ -710,4 +724,13 @@ h1 {
 
 .page-analytics {
     background-image: url(../img/anytype-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 105px 0 99px 0;
+}
+
+.page-control {
+    background-image: url(../img/analysis-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
