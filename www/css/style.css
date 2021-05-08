@@ -239,32 +239,26 @@ h1 {
 
 .grid-item-1 { 
     grid-area: b;
-    /*box-shadow: 1px 7px 5px 6px #fafafa;*/
 }
 
 .grid-item-2 {
     grid-area: c;
-     /*box-shadow: 1px 7px 5px 6px #fafafa;*/
 }
 
 .grid-item-3 {
     grid-area: d;
-      /*box-shadow: 1px 7px 5px 6px #fafafa;*/
 }
 
 .grid-item-4 {
     grid-area: e;
-      /*box-shadow: 1px 7px 5px 6px #fafafa;*/
 }
 
 .grid-item-5 {
     grid-area: f;
-     /*box-shadow: 1px 7px 5px 6px #fafafa;*/
 }
 
 .grid-item-6 {
     grid-area: g;
-      /*box-shadow: 1px 7px 5px 6px #fafafa;*/
 }
 
 
@@ -685,8 +679,57 @@ h1 {
 .box-subscribe-user input:-moz-placeholder           {color:#b1e3ee;}
 .box-subscribe-user input:-ms-input-placeholder      {color:#b1e3ee;}
 
+.box-clients {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 62px;
+}
+
+.box-clients-item {
+    background-color: #fff;
+    padding: 21px 42px;
+    border-radius: 10px;
+    flex-basis: 32%;
+    box-sizing: border-box;
+    font-size: 14px;
+    box-shadow: 0 9px 20px #f4f4f4;
+}
+
+.box-clients-item>P {
+    margin-top: 4px;
+}
+
+
+.box-clients-item .name {
+    color: #000958;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0;
+    letter-spacing: -0.6px;
+    line-height: 1.1;
+} 
+
+.box-clients-item .position {
+    color: #1085e4;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+
+.box-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box-info>div {
+ padding-left: 17px;
+}
 
 /* page */
+
 
 .page-header {
     background-image: url(../img/header-bg.png);
@@ -753,4 +796,20 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 134px 0 118px 0;
+    background-position: center;
+}
+
+.page-clients {
+    background-image: url(../img/polygon.svg);
+    background-repeat: no-repeat;
+   background-position: 0 0;
+   padding: 16px 0 0 0;
+}
+
+.page-clients .title-40 span {
+    color: #85c8ff;
+}
+
+.page-clients .title-40  {
+    color: #fff;
 }
