@@ -728,6 +728,20 @@ h1 {
  padding-left: 17px;
 }
 
+.box-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.box-team-item {
+    background-color: #fff;
+    flex-basis: 32%;
+    box-shadow: 0 9px 20px #f4f4f4;
+
+}
+
+
 /* page */
 
 
@@ -806,10 +820,17 @@ h1 {
    padding: 16px 0 0 0;
 }
 
-.page-clients .title-40 span {
+.page-clients .title-40, .page-team .title-40  {
+    color: #fff;
+}
+
+.page-clients .title-40 span, .page-team .title-40 span  {
     color: #85c8ff;
 }
 
-.page-clients .title-40  {
-    color: #fff;
+.page-team {
+    text-align: center;
+    background-image: url(../img/team-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
