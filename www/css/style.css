@@ -546,6 +546,11 @@ h1 {
 .box-price {
     display: flex;
     justify-content: space-between;
+    margin-top: 83px;
+}
+
+.box-price .btn-primery {
+    padding: 20px 60px;
 }
 
 .box-price-item {
@@ -731,14 +736,54 @@ h1 {
 .box-team {
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    margin-top: 141px;
 }
 
 .box-team-item {
     background-color: #fff;
-    flex-basis: 32%;
-    box-shadow: 0 9px 20px #f4f4f4;
+    flex-basis: 31.5%;
+    box-shadow: 0 5px 6px #f4f4f4;
+    position: relative;
+    padding: 198px 0 42px 0;
+}
 
+.box-team-item .position {
+    color: #1a88e1;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 0;
+    letter-spacing: 2.1px;
+}
+
+.box-team-item .name {
+    color: #192b59;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 8px;
+    letter-spacing: -0.9px;
+}
+
+.box-team-item .avatar {
+    position: absolute;
+    top: -83px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.box-team-item .btn-more {
+    background-image: url(../img/plus.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.box-team-item .btn-more:focus {
+    outline: none;
 }
 
 
@@ -771,6 +816,10 @@ h1 {
 
 .page-plan, .page-screen {
     text-align: center;
+}
+
+.page-plan {
+    padding: 83px 0 121px 0;
 }
 
 .page-screen {
@@ -814,10 +863,10 @@ h1 {
 }
 
 .page-clients {
-    background-image: url(../img/polygon.svg);
+    background-image: url(../img/testimonials-bg.png);
     background-repeat: no-repeat;
    background-position: 0 0;
-   padding: 16px 0 0 0;
+   padding-top: 160px;
 }
 
 .page-clients .title-40, .page-team .title-40  {
@@ -833,4 +882,5 @@ h1 {
     background-image: url(../img/team-bg.png);
     background-position: center;
     background-repeat: no-repeat;
+    padding: 82px 0 20px 0;
 }
