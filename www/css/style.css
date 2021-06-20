@@ -817,6 +817,50 @@ h1 {
     justify-content: space-between;
 }
 
+.box-team-item .btn-fb span {
+    background-position: -25px -4px;
+    width: 20px;
+    height: 21px;
+}
+
+.box-team-item .btn-fb:hover span {
+    background-position: -28px 11px;
+}
+
+.box-team-item .btn-tw span {
+    background-position: -52px -4px;
+    width: 20px;
+    height: 21px;;
+}
+
+.box-team-item .btn-tw:hover span {
+    background-position: -54px -25px;
+}
+
+.box-team-item .btn-be span {
+    background-position: -82px -4px;
+    width: 20px;
+    height: 21px;
+}
+
+.box-team-item .btn-be:hover span {
+    background-position: -83px -25px;
+}
+
+.box-team-item .btn-web span {
+    background-position: -110px -4px;
+    width: 20px;
+    height: 21px;
+}
+
+.box-team-item .btn-web:hover span {
+    background-position: -1px -25px;
+}
+
+
+
+
+
 /* page */
 
 
