@@ -744,7 +744,8 @@ h1 {
     flex-basis: 31.5%;
     box-shadow: 0 5px 6px #f4f4f4;
     position: relative;
-    padding: 198px 0 42px 0;
+    padding: 198px 31px 42px 31px;
+    box-sizing: border-box;
 }
 
 .box-team-item .position {
@@ -782,6 +783,7 @@ h1 {
     border: none;
     padding: 0;
     transition: 0.3s;
+    display: flex;
 }
 
 .box-team-item .btn-team:hover {
@@ -793,6 +795,7 @@ h1 {
     background-repeat: no-repeat;
     display: block;
     margin: 0 auto;
+    align-self: center;
 }
 
 .box-team-item .btn-more span {
@@ -813,18 +816,19 @@ h1 {
 
 .social-team {
     display: flex;
+    padding: 0;
     list-style-type: none;
     justify-content: space-between;
 }
 
 .box-team-item .btn-fb span {
-    background-position: -25px -4px;
+    background-position: -26px -4px;
     width: 20px;
     height: 21px;
 }
 
 .box-team-item .btn-fb:hover span {
-    background-position: -28px 11px;
+    background-position: -26px -25px;
 }
 
 .box-team-item .btn-tw span {
@@ -854,15 +858,48 @@ h1 {
 }
 
 .box-team-item .btn-web:hover span {
-    background-position: -1px -25px;
+    background-position: -110px -25px; 
+}
+
+.object-circle {
+    background-image: url(../img/circle.svg);
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -363px;
+    width: 413px;
+    height: 765px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.object-rectangle {
+    background-image: url(../img/rectangle.svg);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -198px;
+    width: 569px;
+    height: 661px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.intro {
+    color: rgba(0,0,0,0.04);
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 39px;
+    margin: 0;
 }
 
 
-
-
-
 /* page */
-
 
 .page-header {
     background-image: url(../img/header-bg.png);
@@ -886,6 +923,7 @@ h1 {
 
 .page-stat {
     padding: 116px 0 96px 0;
+    position: relative;
 }
 
 .page-plan, .page-screen {
