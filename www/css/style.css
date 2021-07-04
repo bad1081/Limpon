@@ -898,6 +898,72 @@ h1 {
     margin: 0;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form textarea {
+    min-height: 200px;
+    resize: none;
+}
+
+.contact-form input, .contact-form textarea {
+    font-size: 14px;
+    font-weight: 500;
+    border: 2px solid #dce4ec;
+    padding: 24px 47px;
+    border-radius: 35px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder  {color:#adb5c9;}
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {color:#adb5c9;}
+.contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder {color:#adb5c9;}
+.contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder        {color:#adb5c9;}
+
+.content-form-item {
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.content-form-item::after { 
+    content: '';
+    display: block;
+    position: absolute;
+    right: 42px;
+    background-repeat: no-repeat;
+}
+
+.content-form-name::after { 
+    background-image: url(../img/user.png);
+    width: 13px;
+    height: 15px;
+    top: 26px;
+}
+
+.content-form-mail::after { 
+    background-image: url(../img/envelope.png);
+    width: 14px;
+    height: 11px;
+    top: calc(50% - 7px);
+}
+
+.content-form-text::after { 
+    background-image: url(../img/pen.png);
+    width: 14px;
+    height: 15px;
+    top: 29px;
+}
+
+.flex-form {
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+     max-width: 1110px;
+     margin: 0 auto;
+}
+
 
 /* page */
 
@@ -995,4 +1061,11 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     padding: 82px 0 20px 0;
+}
+
+.page-form {
+    background-image: url(../img/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: ;
 }
