@@ -904,7 +904,7 @@ h1 {
 }
 
 .contact-form textarea {
-    min-height: 200px;
+    min-height: 161px;
     resize: none;
 }
 
@@ -912,19 +912,46 @@ h1 {
     font-size: 14px;
     font-weight: 500;
     border: 2px solid #dce4ec;
-    padding: 24px 47px;
+    padding: 26px 80px 26px 37px;
     border-radius: 35px;
     width: 100%;
     box-sizing: border-box;
 }
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+}
+
 .contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder  {color:#adb5c9;}
 .contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {color:#adb5c9;}
 .contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder {color:#adb5c9;}
 .contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder        {color:#adb5c9;}
 
+.contact-form .btn-primery {
+    position: relative;
+    padding: 22px 40px 22px 65px;
+    max-width: 232px;
+    letter-spacing: 2px;
+}
+
+.contact-form .btn-primery::before {
+    content:'';
+    background-image: url(../img/plane.png);
+    position: absolute;
+    left: 54px;
+    top: calc (50% - 6px);
+    width: 14px;
+    height: 13px;
+    display: block;
+}
+
 .content-form-item {
     margin-bottom: 19px;
     position: relative;
+}
+
+.content-form-item.content-form-text {
+    margin-bottom: 34px;
 }
 
 .content-form-item::after { 
@@ -958,11 +985,19 @@ h1 {
 
 .flex-form {
     display: flex;
-    justify-content: space-between;
-     align-items: center;
-     max-width: 1110px;
-     margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1090px;
+    margin: 0px auto;
 }
+
+.flex-form img {
+    margin-right: 60px;
+}
+
+.flex-form>div {
+    flex-basis: 47% ;
+} 
 
 
 /* page */
@@ -1060,7 +1095,7 @@ h1 {
     background-image: url(../img/team-bg.png);
     background-position: center;
     background-repeat: no-repeat;
-    padding: 82px 0 20px 0;
+    padding: 82px 0 120px 0;
 }
 
 .page-form {
@@ -1068,4 +1103,5 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: ;
+    padding: 70px 0 120px 0;
 }
