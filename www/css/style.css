@@ -76,6 +76,8 @@ h1 {
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .content-app .title-h2 {
     margin-bottom: 33px;
@@ -187,35 +189,64 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     max-width: 1110px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .list-company-item {
+    flex-basis: 25%;
+}
+
+.company-one {
+    flex-basis: 198px;
+}
+
+.list-company-item span {
     display: block;
 }
 
 .company-one {
-    background-image: url(../img/sp1.png);
     flex-basis: 198px;
-    height: 58px;
 }
 
 .company-two {
-    background-image: url(../img/sp2.png);
     flex-basis: 200px;
-    height: 69px;
 }
 
 .company-three {
-    background-image: url(../img/sp3.png);
     flex-basis: 201px;
+}
+
+.company-four  {
+    flex-basis: 200px;
+}
+
+.company-one span {
+    background-image: url(../img/sp1.png);
+    width: 198px;
+    height: 58px;
+}
+
+
+.company-two span {
+    background-image: url(../img/sp2.png);
+    width: 200px;
+    height: 69px;
+}
+
+
+.company-three span {
+    background-image: url(../img/sp3.png);
+    width: 201px;
     height:47px;
 }
 
-.company-four {
+.company-four span {
     background-image: url(../img/sp4.png);
-    flex-basis: 200px;
+    width: 200px;
     height: 69px;
 }
 
@@ -230,7 +261,8 @@ h1 {
     margin: 0 auto;   
     grid-gap: 35px;
     grid-template-columns: 1fr 1fr 1fr;        
-    padding: 88px 0 103px 0; 
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .grid-title {
@@ -541,6 +573,8 @@ h1 {
 .analysis {
     margin-top: 36px;
     margin-bottom: -7px;
+    width: 100%;
+    max-width: 1288px;
 }
 
 .box-price {
@@ -641,6 +675,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .box-subscribe-text {
@@ -1030,15 +1065,69 @@ h1 {
 }
 
 .social>li{ 
-    margin-left: 15px;
+    margin-left: 23px;
 }
 
 .social>li>a{
     text-decoration: none;
     color: #fff;
     font-size: 24px;
-
 }
+
+.social-link svg, .social-twitter svg path{
+    transition: 0.3s;
+    fill: #fff;
+}
+
+.social-link:hover svg, .social-twitter:hover svg path{
+    fill: #1085e4;
+}
+
+.social-link svg, .social-facebook svg path{
+    transition: 0.3s;
+    fill: #fff;
+}
+
+.social-link:hover svg, .social-facebook:hover svg path{
+    fill: #1085e4;
+}
+
+.social-link svg, .social-facebook svg path{
+    transition: 0.3s;
+    fill: #fff;
+}
+
+.social-link:hover svg, .social-facebook:hover svg path{
+    fill: #1085e4;
+}
+
+.social-link svg, .social-behance svg path{
+    transition: 0.3s;
+    fill: #fff;
+}
+
+.social-link:hover svg, .social-behance:hover svg path{
+    fill: #1085e4;
+}
+
+.social-link svg, .social-pinterest svg path{
+    transition: 0.3s;
+    fill: #fff;
+}
+
+.social-link:hover svg, .social-pinterest:hover svg path{
+    fill: #1085e4;
+}
+
+.social-link svg, .social-foursquare svg path{
+    transition: 0.3s;
+    fill: #fff;
+}
+
+.social-link:hover svg, .social-foursquare:hover svg path{
+    fill: #1085e4;
+}
+
 
 /* page */
 
@@ -1098,6 +1187,8 @@ h1 {
 
 .page-app .wrap {
     position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .page-analytics {
@@ -1144,4 +1235,53 @@ h1 {
     background-repeat: no-repeat;
     background-size: ;
     padding: 70px 0 120px 0;
+}
+
+/* MEDIA */
+
+@media (max-width:1050px) {
+    .list-company-item {
+        flex-basis: 50%;
+        margin-bottom: 50px;
+    }
+
+    .list-company-item span {
+        margin: 0 auto;
+    }
+
+    .page-company {
+        padding: 50px 0px 25px;
+    }
+
+    .grid {
+        grid-template-areas: "a a" 
+                             "b c" 
+                             "d e"
+                             "f g"
+                             "h h";
+      grid-template-columns: 1fr 1fr
+
+    }
+
+    .grid h2 {
+        text-align: center;
+    }
+
+    .box-subscribe {
+        flex-direction:column-reverse ;
+        padding: 50px 0 65px 0;
+    }
+
+    .box-subscribe-child {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .box-subscribe img {
+        margin: 0 auto 30px;
+        max-width: 170px;
+    } 
+
+    .box-subscribe-text {
+        margin: 0 auto 30px;
 }
