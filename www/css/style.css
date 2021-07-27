@@ -127,6 +127,16 @@ h1 {
     top: 188px;
 }
 
+.btn-menu {
+    border: none;
+}
+
+.btn-menu svg{
+    width: 35px;
+    height: 35px;
+    fill: #192b59;
+}
+
 .btn-primery {
     background-color: #1085e4;
     color: #fff;
@@ -1172,11 +1182,7 @@ h1 {
     padding: 25px 0 28px 0;
     color: #fff;
     background: rgba(10,32,144,1);
-    background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
 }
@@ -1284,4 +1290,4 @@ h1 {
 
     .box-subscribe-text {
         margin: 0 auto 30px;
-}
+}}
