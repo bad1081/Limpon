@@ -111,9 +111,31 @@ h1 {
     padding: 0 20px;
 }
 
+.nav>li:last-child {
+    padding-right: 0;
+}
+
 .nav-item {
     color: #6e7ea9;
     letter-spacing: 2px;
+}
+
+.nav-modal {
+    font-size: 12px;
+    color: #6e7ea9;
+    text-transform: uppercase;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav-modal>li {
+    margin-bottom: 12px;
+}
+
+ul.nav-modal>li:last-child {
+    margin-top: 35px;
 }
 
 .screen-img {
@@ -129,13 +151,20 @@ h1 {
 
 .btn-menu {
     border: none;
+    display: none;
+    background: transparent;
 }
 
-.btn-menu svg{
+.btn-menu:focus {
+    outline: none;
+} 
+
+.btn-menu svg {
     width: 35px;
     height: 35px;
     fill: #192b59;
 }
+
 
 .btn-primery {
     background-color: #1085e4;
@@ -190,6 +219,44 @@ h1 {
 
 .btn-group a + a {
     margin-left: 15px;
+}
+
+.btn-close {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 33px;
+    font-size: 35px;
+    top: 15px;
+    color: #6e7ea9;
+    opacity: 0.2;
+    transition: 0.3s;
+}
+
+.btn-close:hover { 
+    opacity: 1;
+}
+
+.btn-close:focus {
+    outline: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 30px;
+    left: 0;
+    right: 0;
+    max-width: 800px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    padding: 30px 15px 45px 15px;
+    margin: 0 auto;
+    box-shadow: 0 5px 6px #f4f4f4;
+    border-radius: 10px;
+
 }
 
 .list-company {
@@ -767,7 +834,6 @@ h1 {
     margin-top: 0;
     letter-spacing: 3px;
 }
-
 .box-info {
     display: flex;
     justify-content: flex-start;
@@ -1239,12 +1305,25 @@ h1 {
     background-image: url(../img/footer-bg.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: ;
     padding: 70px 0 120px 0;
 }
 
 /* MEDIA */
 
+@media (max-width:1420px) {
+    .{
+        
+    }
+    
+}
+@media (max-width:1090px) {
+    .nav {
+        display: none;
+    }
+    .btn-menu {
+        display: block;
+    }
+}
 @media (max-width:1050px) {
     .list-company-item {
         flex-basis: 50%;

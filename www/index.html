@@ -36,7 +36,7 @@
                 <li><a href="#" class="nav-item">Team</li>
                 <li><a href="#" class="btn-primery btn-free">Free trial</a></li>
             </ul>
-            <button class="btn-menu" type="button"><svg viewBox="0 -53 384 384" xmlns="http://www.w3.org/2000/svg"><path d="M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 32H16C7.168 32 0 24.832 0 16S7.168 0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 277.332H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0"/></svg></button>
+            <button class="btn-menu" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 76H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zM492 396H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"/></svg></button>
         </div>
         <div class="wrap">
             <h1>Best Software  Landingpage </h1>
@@ -49,7 +49,7 @@
     </div>
     <div class="page-company">
         <ul class="list-company">
-            <li class="list-company-item company-one"><span></span></li>
+            <li class="list-company-item company-one"><span></span></li>   
             <li class="list-company-item company-two"><span></span></li>
             <li class="list-company-item company-three"><span></span></li>
             <li class="list-company-item company-four"><span></span></li>
@@ -416,24 +416,42 @@
                 </ul>
             </div>
         </div>
+        <div class="modal">
+            <button class="btn-close" type="button"><span>&times;</span></button>
+            <ul class="nav-modal">
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li><a href="#" class="nav-item">Features</a></li> 
+                <li><a href="#"class="nav-item">Video</a></li>
+                <li><a href="#" class="nav-item">Screens</a></li>
+                <li><a href="#"class="nav-item">Pricing</a></li>
+                <li><a href="#" class="nav-item">Team</li>
+                <li><a href="#" class="btn-primery btn-free">Free trial</a></li>
+            </ul>
+        </div>
     </footer>
     <script defer src="js/all.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
-          $(".btn-ricardo").click(function(){
-            $(".btn-ricardo").hide();
-            $(".social-ricardo").fadeIn();
-          });
-          $(".btn-thomas").click(function(){
-            $(".btn-thomas").hide();
-            $(".social-thomas").fadeIn();
-          });
-          $(".btn-alberto").click(function(){
-            $(".btn-alberto").hide();
-            $(".social-alberto").fadeIn();
-          });
+            $(".btn-ricardo").click(function(){
+                $(".btn-ricardo").hide();
+                $(".social-ricardo").fadeIn();
+            });
+            $(".btn-thomas").click(function(){
+                $(".btn-thomas").hide();
+                $(".social-thomas").fadeIn();
+            });
+            $(".btn-alberto").click(function(){
+                $(".btn-alberto").hide();
+                $(".social-alberto").fadeIn();
+            });
+            $(".btn-menu").click(function(){
+                $(".modal").show();
+            })
+            $(".btn-close").click(function(){
+                $(".modal").hide(); 
+            })   
         });
-        </script>
+    </script>
 </body>
 </html>   
