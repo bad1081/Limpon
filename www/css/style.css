@@ -1354,16 +1354,17 @@ ul.nav-modal>li:last-child {
         flex-basis:100% ;
     }
 
+    .page-software {
+        padding: 60px 0;
+        justify-content: center;
+    } 
+
     .page-software-flex {
         justify-content: center;
     }
 
-    .page-software {
-        padding: 60px 0;
-    }
-
     .page-software-list {
-        width: 800px;
+        max-width: 800px;
         margin-right: 50px;
         height: 266px;
     }
@@ -1483,4 +1484,4 @@ ul.nav-modal>li:last-child {
     .page-header {
         padding: 53px 0 130px 0;
     }
-}}
+}}}
