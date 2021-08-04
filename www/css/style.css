@@ -1356,7 +1356,6 @@ ul.nav-modal>li:last-child {
 
     .page-software {
         padding: 60px 0;
-        justify-content: center;
     } 
 
     .page-software-flex {
@@ -1446,6 +1445,15 @@ ul.nav-modal>li:last-child {
         margin: 0 auto 30px;
     }
 
+    .flex-analytics {
+        width: 100%;
+        text-align: center;
+    }
+
+    .flex-analytics>div {
+        flex-basis: 100%;
+    }
+
 }
 
 @media (max-width:930px) {
@@ -1458,7 +1466,8 @@ ul.nav-modal>li:last-child {
     .list-stat > li {
         flex-basis: 34%;
         margin-bottom: 30px;
-  
+    }
+
 }
 
 @media (max-width:600px) {
