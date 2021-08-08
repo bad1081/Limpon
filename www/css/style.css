@@ -1451,20 +1451,16 @@ ul.nav-modal>li:last-child {
     }
 
     .flex-analytics > div {
-        flex-basis: 100%;
+        flex-basis: 50%;
         text-align: center;
-        padding: 0 10px 0 100px;
-        color: #f0f0f0;
-        flex-direction:column-reverse;
     }
 
     .flex-analytics .title-h2 {
-        color: #fff;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .flex-analytics img {
-        margin: 0 auto;
+        margin: 0px auto;
         max-width: 350px;
     }
 
